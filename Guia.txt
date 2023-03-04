@@ -1,0 +1,14 @@
+01. Aprender Python
+02. Usar o Visual Code
+03. Ler o livro Curso Intensivo de Python
+04. Ler o livro Python Programing
+05. Dominar os conceitos básicos para depois ir para o avançado
+06. Focar nos fundamentos
+07. Treinar desenvolvendo projetos que me interessam
+08. Custo Datascy.com
+09. Livro Data Science and Big Data Analytics
+10. Livro Estatística e Ciência de Dados
+11. Se preparar para entrevistas de emprego
+12. Livro Entendendo algorítimos
+13. Praticar com simulado: site leetcode
+14. 
