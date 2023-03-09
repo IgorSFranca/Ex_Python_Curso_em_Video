@@ -12,7 +12,6 @@ for valor in range (0, 5):
                 print(f'Adicionao a posição {pos} da lista.')
                 break
             pos += 1
-print('*'*35)
+print('*'*40)
 print(f'Os valores digitados foram {lista}.')
-
-#Não consegui fazer esse caralho. Tive que colar. 
+print('*'*40)
