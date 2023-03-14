@@ -1,14 +1,14 @@
 nome_peso = []
+mais_peso = []
+menos_peso = []
 dados = []
 resp = ''
-tot_pessoas = mais_pesadas = menos_pesadas = 0
+tot_pessoas = 0
 while True: 
     while resp in 'S':
-          #início das Perguntas
       dados.append(str(input('Nome: ')))
       dados.append(float(input('Peso: ')))
       resp = str(input('Deseja continuar? [S/N]: ')).strip().upper()
-          #Fim das perguntas
       tot_pessoas += 1
       nome_peso.append(dados[:])
       dados.clear()
