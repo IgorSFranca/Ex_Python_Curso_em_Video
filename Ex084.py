@@ -6,4 +6,7 @@ for pessoa in range (0, 3):
     galera.append(dados[:])
     dados.clear()
 for pessoa in galera:
-    print(pessoa[0])
+    if pessoa[1] >= 18:
+        print(f'{pessoa[0]} é maior de idade')
+    else:
+        print(f'{pessoa[0]} é menor de idade')
