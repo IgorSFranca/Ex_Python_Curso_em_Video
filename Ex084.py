@@ -1,12 +1,19 @@
-galera = []
+nome_peso = []
 dados = []
-for pessoa in range (0, 3):
-    dados.append(str(input('Nome: ')))
-    dados.append(int(input('Idade: ')))
-    galera.append(dados[:])
-    dados.clear()
-for pessoa in galera:
-    if pessoa[1] >= 18:
-        print(f'{pessoa[0]} é maior de idade')
-    else:
-        print(f'{pessoa[0]} é menor de idade')
+resp = ''
+tot_pessoas = mais_pesadas = menos_pesadas = 0
+while True: 
+    while resp in 'S':
+          #início das Perguntas
+      dados.append(str(input('Nome: ')))
+      dados.append(float(input('Peso: ')))
+      resp = str(input('Deseja continuar? [S/N]: ')).strip().upper()
+          #Fim das perguntas
+      tot_pessoas += 1
+      nome_peso.append(dados[:])
+      dados.clear()
+      while resp not in 'SN':
+         resp = str(input('Opção não identificada. Deseja Continuar? [S/N]: ')).strip().upper()
+    if resp == 'N':
+      break
+print(f'Foram cadastradas {tot_pessoas} pessoas.')
