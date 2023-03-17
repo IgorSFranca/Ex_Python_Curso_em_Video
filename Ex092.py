@@ -14,8 +14,7 @@ trabalhador['CTPS'] = int(input('Num. da CTPS (0 não tem): '))
 if trabalhador['CTPS'] != 0:
     trabalhador['Contratação'] = int(input('Ano de Contratação: '))
     trabalhador['Salário'] = float(input('Salário: '))
-    aposentadoria = (trabalhador['Contratação']) + 35
-    idade_aposentadoria = ((aposentadoria) - date.today().year) + idade 
+    idade_aposentadoria = (((trabalhador['Contratação']) + 35) - date.today().year) + idade 
     trabalhador['Aposentadoria'] = idade_aposentadoria
 print('-'*25)
 for k, v in trabalhador.items():
