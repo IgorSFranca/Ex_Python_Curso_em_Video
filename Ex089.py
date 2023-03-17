@@ -22,7 +22,7 @@ while True:
 #
 # Análise dos dados
 print('-'*18)
-print('No. Nome     Média')
+print(f'{"Nº":<4}{"NOME":<10}{"MÉDIA":>8}')
 for indice in range (0, len(alunos)):
     print('{:<4}'.format(indice), end='')
     print('{:<9}'.format(alunos[indice][0]), end='')
