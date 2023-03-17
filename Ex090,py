@@ -1,1 +1,10 @@
-pessoas = {'Nome': 'Igor', 'Idade': 31, 'sexo': 'M'}
+aluno = {}
+aluno['Nome'] = str(input('Nome: '))
+aluno['Média'] = float(input(f'Média de {aluno["Nome"]}: '))
+print('-'*15)
+print(f'O nome é igual a {aluno["Nome"]}')
+print(f'A média é igual a {aluno["Média"]}')
+if aluno['Média'] >= 7:
+    print(f'A situação é igual a Aprovado')
+else:
+    print(f'A situação é igual a Reprovado')
