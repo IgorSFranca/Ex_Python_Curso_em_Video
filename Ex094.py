@@ -25,13 +25,13 @@ print('-'*30)
 print(f'A) Ao todo temos {c_pessoas} pessoas cadastradas.')
 print(f'B) A média de idade é {media} anos')
 print('C) As mulheres cadastradas foram', end='')
-for posicao, pessoa in enumerate(pessoas):
-    if pessoas[posicao]['sexo'] == 'F':
-        print(f' {pessoas[posicao]["nome"]}')
+for pessoa in pessoas:
+    if pessoa['sexo'] == 'F':
+        print(f' {pessoa["nome"]}', end='')
 print('D) A lista de pessoas que estão acima da média:')
-for posicao, pessoa in enumerate(pessoas):
-    if pessoas[posicao]['idade'] > media: 
-        print(f'Nome = {pessoas[posicao]["nome"]}; Sexo = {pessoas[posicao]["sexo"]}; Idade = {pessoas[posicao]["idade"]}. ')
+for posicao in pessoas:
+    if posicao['idade'] > media: 
+        print(f'Nome = {posicao["nome"]}; Sexo = {posicao["sexo"]}; Idade = {posicao["idade"]}. ')
 
 print('-'*30)
 print('ENCERRADO')
