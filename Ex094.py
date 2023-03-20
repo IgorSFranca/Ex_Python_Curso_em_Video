@@ -24,7 +24,14 @@ media = s_idade/c_pessoas
 print('-'*30)
 print(f'A) Ao todo temos {c_pessoas} pessoas cadastradas.')
 print(f'B) A média de idade é {media} anos')
-for pessoa in enumerate(pessoas):
-    if individuo['sexo'] == 'F':
-        mulheres += 1
-print(f'Foram cadastradas {mulheres} mulheres')
+print('C) As mulheres cadastradas foram', end='')
+for posicao, pessoa in enumerate(pessoas):
+    if pessoas[posicao]['sexo'] == 'F':
+        print(f' {pessoas[posicao]["nome"]}')
+print('D) A lista de pessoas que estão acima da média:')
+for posicao, pessoa in enumerate(pessoas):
+    if pessoas[posicao]['idade'] > media: 
+        print(f'Nome = {pessoas[posicao]["nome"]}; Sexo = {pessoas[posicao]["sexo"]}; Idade = {pessoas[posicao]["idade"]}. ')
+
+print('-'*30)
+print('ENCERRADO')
