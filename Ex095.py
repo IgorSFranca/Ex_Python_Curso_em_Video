@@ -27,4 +27,12 @@ print('-'*30)
 print(f'{"COD ":<4}{"NOME":<15}{"GOLS":<20}{"TOTAL":<5}')
 for i, j in enumerate(ranking):
    print(f'{i:<4}{j["nome"]:<15}{str(j["gols"]):<20}{j["total"]:<5}')
-print(ranking)
+print('-'*30)
+
+while True:
+  info = int(input('Mostrar dados de qual jogador? (999 para parar): '))
+  print(f'--- Levantamento do jogador {ranking[info]["nome"]}')
+  if info == 999:
+     break
+  for i, dic in enumerate(ranking[info]['gols']):
+     print(f'--→ No jogo {i+1} fez {ranking[info]["gols"][i]} gols')
