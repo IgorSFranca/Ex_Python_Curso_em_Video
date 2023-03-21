@@ -31,8 +31,10 @@ print('-'*30)
 
 while True:
   info = int(input('Mostrar dados de qual jogador? (999 para parar): '))
-  print(f'--- Levantamento do jogador {ranking[info]["nome"]}')
   if info == 999:
-     break
+    break
+  print(f'--- Levantamento do jogador {ranking[info]["nome"]}')
   for i, dic in enumerate(ranking[info]['gols']):
      print(f'--→ No jogo {i+1} fez {ranking[info]["gols"][i]} gols')
+print('-'*30)
+print('>>> FINALIZADO <<<')
