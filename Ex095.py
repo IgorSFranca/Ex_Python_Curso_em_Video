@@ -35,6 +35,6 @@ while True:
     break
   print(f'--- Levantamento do jogador {ranking[info]["nome"]}')
   for i, dic in enumerate(ranking[info]['gols']):
-     print(f'--→ No jogo {i+1} fez {ranking[info]["gols"][i]} gols')
+     print(f'--→ No jogo {i+1} fez {dic} gols')
 print('-'*30)
 print('>>> FINALIZADO <<<')
