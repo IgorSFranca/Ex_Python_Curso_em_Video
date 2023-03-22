@@ -1,41 +1,41 @@
 from time import sleep
 
-def cont1(texto):
-    print(texto)
-    for num in range (1, 11):
-        print(num, end=' ')
-        # sleep(1)
-    print('FIM!')
+def contador(i, f, p):
+    print(f'Contagem de {i} até {f} de {p} em {p}')
+    sleep(2.5)
 
-def cont2(texto):
-    print(texto)
-    for num in range (10, -1, -2):
-        print(num, end=' ')
-        # sleep(1)
-    print('FIM!')
+    if p == 0:
+        p = 1
+    if p < 0:
+        p *= -1
 
-def cont3(texto):
-    print(texto)
-    for num in range (inicio, fim, passo):
-        print(num, end=' ')
-    print('FIM!')
+    if i < f:
+      cont = i
+      while cont <= f:
+          print(f'{cont} ', end='', flush=True)
+          cont += p
+          sleep(0.5)
+      print('FIM!')
+    else:
+        cont = i
+        while cont >= f:
+            print(f'{cont} ', end='', flush=True)
+            cont -= p
+            sleep(0.5)
+        print('FIM!')
 
 def lin():
-    print('-='*30)
+    print('-'*30)
 
-
 lin()
-cont1('Contagem de 1 até 10 de 1 em 1')
+contador(1, 10, 1)
 lin()
-cont2('Contagem de 10 até 0 de 2 em 2')
+contador(10, 0, 2)
 lin()
-inicio = int(input('Início: '))
+print('Agora é sua vez de personalizar a contagem!')
+ini = int(input('Inicio: '))
 fim = int(input('Fim: '))
 passo = int(input('Passo: '))
-cont3('Agora é sua vez de personalizar a contagem!')
 lin()
-inicio = int(input('Início: '))
-fim = int(input('Fim: '))
-passo = int(input('Passo: '))
-cont3('Vamos fazer novamente')
+contador(ini, fim, passo)
 lin()
