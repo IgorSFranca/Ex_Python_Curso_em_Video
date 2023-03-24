@@ -9,10 +9,14 @@ def fatorial(n, show):
     for valor in range (n, 0, -1):
         total *= valor
         if show == True:
-            print(valor, end=' x ')
-    return f'= {total}'
+            print(valor, end='')
+            if valor > 1:
+                print(' x ', end='')
+            else:
+                print(' = ', end='')
+    return f'{total}'
 
-    
+
 n = int(input('Digite um número para saber o fatorial: '))
 mostrar = str(input('Quer exitir o cálculo? [S/N] ')).strip().upper()
 if mostrar == 'S':
