@@ -12,5 +12,5 @@ def voto(ano):
     else:
         return f'com {idade} anos: VOTO OPCIONAL'
 
-print('-'*30)
+
 print(voto(int(input('Em que ano você nasceu: '))))
