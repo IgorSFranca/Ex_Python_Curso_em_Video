@@ -10,7 +10,7 @@ def voto(ano):
     elif idade < 16:
         return f'com {idade} anos: VOTO NEGADO'
     else:
-        return f'com `{idade} anos: VOTO OPCIONAL'
+        return f'com {idade} anos: VOTO OPCIONAL'
 
 print('-'*30)
-voto(int(input('Em que ano você nasceu: ')))
+print(voto(int(input('Em que ano você nasceu: '))))
