@@ -12,6 +12,11 @@ def fatorial(n, show):
             print(valor, end=' x ')
     return f'= {total}'
 
-
-print(fatorial(5, show=True))
-help(fatorial)
+    
+n = int(input('Digite um número para saber o fatorial: '))
+mostrar = str(input('Quer exitir o cálculo? [S/N] ')).strip().upper()
+if mostrar == 'S':
+    mostrar = True
+elif mostrar == 'N':
+    mostrar = False
+print(fatorial(n, show=mostrar))
