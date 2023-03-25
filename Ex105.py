@@ -26,4 +26,3 @@ def notas(*num, sit=False):
 resp = notas(5.0, 8.5, 10, sit=True)
 print(resp)
 print('-'*30)
-help(notas)
