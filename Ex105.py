@@ -8,29 +8,16 @@ def notas(*num, sit=False):
     - A situação (opcional)
     """
     notas = {}
-    total_notas = len(num)
-    maior = menor = soma = media = 0
-    notas['total'] = total_notas
-    for valor in range (0, len(num)):
-        if valor == 0:
-            maior = num[valor]
-            menor = num[valor]
-        else:
-            if num[valor] > maior:
-                maior = num[valor]
-            elif num[valor] < menor:
-                menor = num[valor]
-        soma += num[valor]
-    notas['maior'] = maior
-    notas['menor'] = menor
-    media = soma / total_notas
-    notas['media'] = media
+    notas['total'] = len(num)
+    notas['maior'] = max(num)
+    notas['menor'] = min(num)
+    notas['media'] = sum(num)/len(num)
     if sit == True:
-        if media < 3:
+        if notas['media'] < 3:
             notas['situação'] = 'RUIM'
-        elif 3 <= media < 6:
+        elif 3 <= notas['media'] < 6:
             notas['situação'] = 'REGULAR'
-        elif 6 <= media < 8:
+        elif 6 <= notas['media'] < 8:
             notas['situação'] = 'BOA'
         else:
             notas['situação'] = 'EXCELENTE'
