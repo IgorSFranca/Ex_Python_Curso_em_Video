@@ -1,4 +1,12 @@
 def notas(*num, sit=False):
+    """
+    Recebe várias notas de alunos e retorna um dicionário com as seguintes informações:
+    - Quantidade de notas;
+    - A maior nota;
+    - A menor nota; 
+    - A média da turma; 
+    - A situação (opcional)
+    """
     notas = {}
     total_notas = len(num)
     maior = menor = soma = media = 0
@@ -30,3 +38,5 @@ def notas(*num, sit=False):
 
 resp = notas(5.0, 8.5, 10, sit=True)
 print(resp)
+print('-'*30)
+help(notas)
