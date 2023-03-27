@@ -1,0 +1,16 @@
+def resumo(p=0, a=0, r=0):
+    print('-'*30)
+    print(f'{"RESUMO DO VALOR":^30}')
+    print('-'*30)
+    print(f'{"Preço analisado: ":<20}', end='')
+    print(f'R$ {p:<10.2f}'.replace('.',','))
+    print(f'{"Dobro do preço: ":<20}', end='')
+    print(f'R$ {(p*2):<10.2f}'.replace('.',','))
+    print(f'{"Metade do preço: ":<20}', end='')
+    print(f'R$ {(p/2):<10.2f}'.replace('.',','))
+    print(f'{a}% de aumento:     ', end='')
+    print(f'R$ {(p+((p*a/100))):<10.2f}'.replace('.',','))
+    print(f'{r}% de redução:     ', end='')
+    print(f'R$ {(p-((p*r/100))):<10.2f}'.replace('.',','))
+    print('-'*30)
+    return ''
